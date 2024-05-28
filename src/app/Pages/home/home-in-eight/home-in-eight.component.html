@@ -29,7 +29,8 @@
               @for(item of news; track item.id){
                 <li class="card">
                   <div class="img">
-                      <img [src]="'https://localhost:7245' + item.cardPhotoPath" alt="rasm">
+                    <!-- <img [src]="'https://localhost:7245' + item.cardPhotoPath" alt="rasm"> -->
+                      <div><img  style="width: 400px; height: 200px;" [src]="'https://localhost:7245' + item.cardPhotoPath" alt="rasm"></div>
                       <p>Без рубрики</p>
                   </div>
                   <h1 style="width: 100%;font-size: 18px;font-weight: 600;padding: 10px;">{{item.title}}</h1>
@@ -38,7 +39,7 @@
                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"/>
                         </svg>
                         {{item.date}}</p>
-                      <p>Автор: <img src="assets/images/home-in-five/01f618c47d95e5c934e268da9abdb2c2 1.png" alt="" style="margin-left: 5px;"> <span style="padding-left: 5px;">{{item.user.userName}}</span></p>
+                      <p>Автор: <br> <img src="assets/images/home-in-five/01f618c47d95e5c934e268da9abdb2c2 1.png" alt="" style="margin-left:5px;"> <span style="padding-left: 5px;">{{item.user.name}}</span></p>
                   </div>
                   <p style="padding: 10px;border-top: 1px solid black;width: 100%;font-size: 14px;padding-top: 15px;padding-bottom: 15px;">{{item.description}}</p>
                   <div class="card-bottom" style="padding: 10px;width: 100%;border-top: 1px solid black;">

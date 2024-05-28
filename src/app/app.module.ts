@@ -38,6 +38,7 @@ import { OPComponent } from './Pages/o-p/o-p.component';
 import { OPOneComponent } from './Pages/o-p/o-p-one/o-p-one.component';
 import { KorzinaComponent } from './Pages/korzina/korzina.component';
 import { KorzinaInOneComponent } from './Pages/korzina/korzina-in-one/korzina-in-one.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -82,7 +83,8 @@ import { KorzinaInOneComponent } from './Pages/korzina/korzina-in-one/korzina-in
     AppRoutingModule,
     RouterLink,
     RouterOutlet,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(),
