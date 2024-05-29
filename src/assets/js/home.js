@@ -76,7 +76,6 @@ const infiniteScroll = () => {
 // }
 // autoPlay();
 
-
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
